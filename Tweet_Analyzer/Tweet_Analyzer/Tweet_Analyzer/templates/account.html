@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form class="form_class">
+    <div class="info_div">
+        <p>my account</p>
+    </div>
+    <div class="form_div">
+        <div class="group_container">
+            <label for="name">Name:</label>
+            <input id="name" class="field_class" name="name_txt" type="text" placeholder="" autofocus value="test" disabled>
+            <label for="email">Email:</label>
+            <input id="email" class="field_class" name="email_txt" type="text" placeholder="" autofocus value="test@gmail.com" disabled>
+            <label for="contact">Contact:</label>
+            <input id="contact" class="field_class" name="contact_txt" type="text" placeholder="" autofocus value="123456789" disabled>
+            <label for="address">Address:</label>
+            <input id="address" class="field_class" name="address_txt" type="text" placeholder="" autofocus value="some street" disabled>
+            <label for="subscription">Subscription:</label>
+            <input id="subscription" class="field_class" name="subscription_txt" type="text" placeholder="" autofocus value="trial user / active user / ???" disabled>
+        </div>
+        <button class="edit_button" type="submit" form="">edit</button>
+        <button class="cancel_button" type="submit">end subscription</button>
+    </div>
+</form>
+
+{% endblock %}

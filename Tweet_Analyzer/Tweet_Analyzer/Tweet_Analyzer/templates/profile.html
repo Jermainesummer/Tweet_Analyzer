@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="form_class">
+    <div class="info_div">
+        <p>my profile</p>
+    </div>
+    <form class="form_div">
+        <div class="group_container">
+            <label for="username">Username:</label>
+            <input id="username" class="field_class" name="username_txt" type="text" placeholder="" value="test">
+            <label for="password">Password:</label>
+            <input id="password" class="field_class" name="password_txt" type="password" placeholder="" value="test@gmail.com">
+            <label for="gender">Gender:</label>
+            <input id="gender" class="field_class" name="gender_txt" type="text" placeholder="" value="Female">
+            <label for="twt_user">Twitter username:</label>
+            <input id="twt_user" class="field_class" name="twitter_user_txt" type="text" placeholder="" value="@testuser">
+        </div>
+        <button class="edit_button" type="submit" form="">edit</button>
+    </form>
+</div>
+
+{% endblock %}
